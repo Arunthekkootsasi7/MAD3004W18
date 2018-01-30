@@ -1,0 +1,229 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red255\green255\blue255;\red170\green13\blue145;
+\red0\green0\blue0;\red196\green26\blue22;\red28\green0\blue207;\red46\green13\blue110;\red63\green110\blue116;
+\red92\green38\blue153;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c45600\c0;\csgray\c100000;\csgenericrgb\c66500\c5200\c56900;
+\csgenericrgb\c0\c0\c0;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c24700\c43100\c45600;
+\csgenericrgb\c35900\c14900\c60100;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //: Playground - noun: a place where people can play
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 import\cf5  UIKit
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  str = \cf6 "Hello, playground"
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 // Array declaration
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  a = [\cf7 10\cf5 ,\cf7 20\cf5 ,\cf7 30\cf5 ,\cf7 40\cf5 ,\cf7 50\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //print("a[0] : \\(a[0])")
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 "a[0]"\cf5 ,\cf9 a\cf5 [\cf7 0\cf5 ])
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //Alternate declaration
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  secondArray = [\cf10 Int\cf5 ]()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 "The size of second array is \cf5 \\\cf6 (\cf9 secondArray\cf5 .\cf10 count\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //Append an element
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 secondArray\cf5 .\cf8 append\cf5 (\cf7 10\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 secondArray\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 secondArray\cf5 [\cf7 0\cf5 ] = \cf7 50
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 secondArray\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 // assigning the default value
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  thirdArray = [\cf10 Int\cf5 ](repeating: \cf7 1\cf5 ,count: \cf7 3\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  fourthArray = [\cf10 Int\cf5 ](repeating: \cf7 5\cf5 ,count: \cf7 3\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //merging two arrays
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  fifthArray = \cf9 thirdArray\cf5  + \cf9 fourthArray
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 fifthArray\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //using an array of contents
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  x = \cf9 a\cf5 [\cf7 1\cf5 ...\cf7 3\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 for\cf5  t \cf4 in\cf5  \cf9 x\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 print\cf5 (\cf6 "x :"\cf5 ,t)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //string array and for each with KEY,VALUE)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //var shoppingList: [String] = ["Egg","Milk"]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //for (index, value) in shoppingList.enumarated]
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf2 //set
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  grades: \cf10 Set\cf5 <\cf10 Character\cf5 > = []
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 grades\cf5 .\cf8 insert\cf5 (\cf6 "A"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 grades\cf5 .\cf8 insert\cf5 (\cf6 "B"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 "grades : \cf5 \\\cf6 (\cf9 grades\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 "grades no of elements"\cf5 ,\cf9 grades\cf5 .\cf10 count\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  favsport: \cf10 Set\cf5 <\cf10 String\cf5 > = [\cf6 "cricket"\cf5 ,\cf6 "football"\cf5 ,\cf6 "tennis"\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 favsport\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf6 "I have"\cf5 ,\cf9 favsport\cf5 ,\cf6 "in my collection"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 if\cf5  \cf9 favsport\cf5 .\cf10 isEmpty
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 print\cf5 (\cf6 "set is empty"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 else\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 print\cf5 (\cf6 "the set is not empty"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 favsport\cf5 .\cf10 count\cf5 ) \cf2 //displaying the count of the set
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf9 favsport\cf5 .\cf8 insert\cf5 (\cf6 "cricket"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 favsport\cf5 )
+\f1\fs24 \cf0 \
+\
+\
+\
+
+\f0\fs22 \cf2 // creating a set
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //var firstSet: Set<string> = ["one","two","three","four"]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //print(firstset)
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //removing an element
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //firstSet.remove("Dropbox")
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //print(firstset)
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //inserting an element
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //firstSet.insert("Dropbox")
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //print(firstset)
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //set operations
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 let\cf5  odd: \cf10 Set\cf5  = [\cf7 1\cf5 ,\cf7 3\cf5 ,\cf7 5\cf5 ,\cf7 7\cf5 ,\cf7 9\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 let\cf5  even: \cf10 Set\cf5  = [\cf7 0\cf5 ,\cf7 2\cf5 ,\cf7 4\cf5 ,\cf7 6\cf5 ,\cf7 8\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 let\cf5  sdpn: \cf10 Set\cf5  = [\cf7 2\cf5 ,\cf7 3\cf5 ,\cf7 5\cf5 ,\cf7 7\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 odd\cf5 .\cf8 union\cf5 (\cf9 even\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 odd\cf5 .\cf8 intersection\cf5 (\cf9 even\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 odd\cf5 .\cf8 subtracting\cf5 (\cf9 sdpn\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 print\cf5 (\cf9 odd\cf5 .\cf8 symmetricDifference\cf5 (\cf9 sdpn\cf5 ).\cf8 sorted\cf5 ())
+\f1\fs24 \cf0 \
+\
+\
+}
