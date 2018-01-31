@@ -1,0 +1,682 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red255\green255\blue255;\red170\green13\blue145;
+\red0\green0\blue0;\red196\green26\blue22;\red92\green38\blue153;\red63\green110\blue116;\red28\green0\blue207;
+\red46\green13\blue110;\red38\green71\blue75;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c45600\c0;\csgray\c100000;\csgenericrgb\c66500\c5200\c56900;
+\csgenericrgb\c0\c0\c0;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c35900\c14900\c60100;\csgenericrgb\c24700\c43100\c45600;\csgenericrgb\c11000\c0\c81000;
+\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c14900\c27800\c29400;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //: Playground - noun: a place where people can play
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 import\cf5  UIKit
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  str = \cf6 "Hello, playground"
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf2 //DICTINORY TYPE
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  namesOfIntegers = [\cf7 Int\cf5 : \cf7 String\cf5 ]() \cf2 // namesOfIntegers is an emty dictinory ie [Int:String]
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf8 namesOfIntegers\cf5 [\cf9 16\cf5 ] = \cf6 "sixteen"\cf5  \cf2 // namesOfIntegers contains 1 key value pair
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "namesOfInteger:\cf5 \\\cf6 (\cf8 namesOfIntegers\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf8 namesOfIntegers\cf5 [\cf9 28\cf5 ] = \cf6 "tWENTY eIGHT"
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "dictinory contains \cf5 \\\cf6 (\cf8 namesOfIntegers\cf5 .\cf7 count\cf6 ) elements"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "dictinory:',namesOfIntegers"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 namesOfIntegers\cf5  = [:]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "dictinory contains \cf5 \\\cf6 (\cf8 namesOfIntegers\cf5 .\cf7 count\cf6 ) elements"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //print(names
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  airports: [\cf7 String\cf5 : \cf7 String\cf5 ] = [\cf6 "YYZ"\cf5 : \cf6 "Torornto Pearson"\cf5 , \cf6 "DUB"\cf5 : \cf6 "Dublin"\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "airports : \cf5 \\\cf6 (\cf8 airports\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "The airports dictinory contains \cf5 \\\cf6 (\cf8 airports\cf5 .\cf7 count\cf6 ) items."\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf5     \cf8 airports\cf5 [\cf6 "LHR"\cf5 ] = \cf6 "London Heathrow"
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 airports\cf5 [\cf6 "YYZ"\cf5 ] = \cf6 "TP International"
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 airports\cf5 [\cf6 "AMD"\cf5 ] = \cf6 "SVP International"
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "airports: \cf5 \\\cf6 (\cf8 airports\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 let\cf5  oldValue = \cf8 airports\cf5 .\cf10 updateValue\cf5 (\cf6 "Dublin Airport"\cf5 , forKey: \cf6 "DUB"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 " The old Value for DUB was \cf5 \\\cf6 \ulth \ulc6 (\cf8 \ulnone oldValue\cf6 )."\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //prints "the old value for DUB was Dublin
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf4 if\cf5  \cf4 let\cf5  airportName = \cf8 airports\cf5 [\cf6 "AMD"\cf5 ]
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "The name of the airport is\cf5 \\\cf6 (\cf5 airportName\cf6 )."\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 else\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "The airport is not in dictinory"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 airports\cf5 [\cf6 "Mars"\cf5 ] = \cf6 "Range Rover"
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf8 airports\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf8 airports\cf5 [\cf6 "Mars"\cf5 ] = \cf4 nil\cf5  \cf2 // nil is to remove the word or key
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "airports : \cf5 \\\cf6 (\cf8 airports\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf4 if\cf5  \cf4 let\cf5  removedValue = \cf8 airports\cf5 .\cf10 removeValue\cf5 (forKey: \cf6 "DUB"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "The removed airport's name is \cf5 \\\cf6 (\cf5 removedValue\cf6 )."\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 else
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "The airports dictionary does not contain a value for DUB."\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 // Prints "The removed airport's name is Dublin Airport."
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 for\cf5  (airportCode, airportName) \cf4 in\cf5  \cf8 airports
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "\cf5 \\\cf6 (\cf5 airportCode\cf6 ): \cf5 \\\cf6 (\cf5 airportName\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 for\cf5  airportCode \cf4 in\cf5  \cf8 airports\cf5 .\cf7 keys\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 print\cf5 (\cf6 "Airport code: \cf5 \\\cf6 (\cf5 airportCode\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 // Airport code: YYZ
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 // Airport code: LHR
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 for\cf5  airportName \cf4 in\cf5  \cf8 airports\cf5 .\cf7 values\cf5  \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 print\cf5 (\cf6 "Airport name: \cf5 \\\cf6 (\cf5 airportName\cf6 )"\cf5 ) \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 // Airport name: Toronto Pearson
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 // Airport name: London Heathrow
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5    
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 let\cf5  airportCodes = [\cf7 String\cf5 ](\cf8 airports\cf5 .\cf7 keys\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 // airportCodes is ["YYZ", "LHR"]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5    
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 let\cf5  airportNames = [\cf7 String\cf5 ](\cf8 airports\cf5 .\cf7 values\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 // airportNames is ["Toronto Pearson", "London Heathrow"]
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "airportNames : \cf5 \\\cf6 (\cf8 airportNames\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //KEY,VALUE
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  d1:\cf7 Dictionary\cf5  <\cf7 String\cf5 ,\cf7 String\cf5 > = [\cf6 "India"\cf5 :\cf6 "Hindi"\cf5 ,\cf6 "Canada"\cf5 :\cf6 "English"\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5  (\cf8 d1\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 d1\cf5 [\cf6 "India"\cf5 ]!)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 d1\cf5 [\cf6 "Canada"\cf5 ]!)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 \ulth \ulc8 d\ulnone 1\cf5 [\cf6 "USA"\cf5 ])
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 d1\cf5 [\cf6 "China"\cf5 ] = \cf6 " Mandarin"
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 for\cf5 (k,v) \cf4 in\cf5  \cf8 d1\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "\cf5 \\\cf6 (\cf5 k\cf6 )->\cf5 \\\cf6 (\cf5 v\cf6 )"\cf5 )\}
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 // Dictinory with any values type
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  d3 = [\cf7 String\cf5 : \cf7 AnyObject\cf5 ]()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 d3\cf5 [\cf6 "firstName"\cf5 ] = \cf6 " Arun"\cf5  \cf4 as\cf5  \cf7 AnyObject
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 d3\cf5 [\cf6 "lastName"\cf5 ] = \cf6 " Sasi"\cf5  \cf4 as\cf5  \cf7 AnyObject
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 d3\cf5 [\cf6 "age"\cf5 ] = \cf7 Int\cf5 (\cf9 23\cf5 ) \cf4 as\cf5  \cf7 AnyObject
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf8 d3\cf5 [\cf6 "salary"\cf5 ] = \cf4 nil
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "d3"\cf5 ,\cf8 d3\cf5 )
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf2 //getting as a key value pair
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 for\cf5  (k,v) \cf4 in\cf5  \cf8 d3
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "\cf5 \\\cf6 (\cf5 k\cf6 ) -> \cf5 \\\cf6 (\cf5 v\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf2 //declaring tuples
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 var\cf5  x = (\cf9 10\cf5 ,\cf9 20\cf5 ,\cf6 "Arun"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 x\cf5 .\cf9 0\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 x\cf5 .\cf9 1\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 x\cf5 .\cf9 2\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 let\cf5  http404error = (\cf9 404\cf5 , \cf6 "Not Found"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 http404error\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 let\cf5  (statusCode, statusMessage) = \cf8 http404error
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "statusCode:"\cf5 ,\cf8 statusCode\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "statusMessage:"\cf5 ,\cf8 statusMessage\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 let\cf5  (codeOnly, \cf4 _\cf5 ) = \cf8 http404error
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "codeOnly:"\cf5 ,\cf8 codeOnly\cf5 ) \cf2 // use underscore for no messages or data
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf4 let\cf5  errorDescription = (Code:\cf9 404\cf5 ,Message:\cf6 "NotFound"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf8 errorDescription\cf5 .Code,\cf8 errorDescription\cf5 .Message)
+\f1\fs24 \cf0 \
+\
+\
+
+\f0\fs22 \cf2 //function
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //declaration of function
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 func\cf5  add()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "I am in User Defined Function"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf11 add\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  add(n1:\cf7 Int\cf5 , n2:\cf7 Int\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{\cf4 var\cf5  sum : \cf7 Int
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     sum = n1+n2
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5  (\cf6 "sum : "\cf5 ,sum)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf11 add\cf5 (n1:\cf9 10\cf5 ,n2:\cf9 20\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //add(20,10) //error
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //add(n2:30,n1:40)//error
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //single parameter
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  welcome(name:\cf7 String\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "Hello, \cf5 \\\cf6 (\cf5 name\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //making parameter label optional
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  sub(a:\cf7 Int\cf5 , \cf4 _\cf5  b:\cf7 Int\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{\cf4 let\cf5  c = a - b
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "Sub : \cf5 \\\cf6 (\cf5 c\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 // sub(a: a, b)
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //single return type
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  mul(a: \cf7 Int\cf5 , b: \cf7 Int\cf5 ) -> \cf7 Int\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 let\cf5  c = a * b
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 return\cf5  c
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  c = \cf11 mul\cf5 (a :\cf9 5\cf5 ,b :\cf9 2\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "multiplication \cf5 \\\cf6 (\cf8 c\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  a:\cf7 Int
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  b:\cf7 Int
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 func\cf5  swipe(number1 a: \cf7 Int\cf5 , b: \cf7 Int\cf5 ) -> (\cf7 Int\cf5 , \cf7 Int\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 return\cf5  (b,a)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 //fn para are constants by default
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 //var temp = a
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 //a = b
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf2 //b= temp
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 (\cf8 a\cf5 ,\cf8 b\cf5 ) = \cf11 swipe\cf5 (number1: \cf9 10\cf5 , b: \cf9 20\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "a: \cf5 \\\cf6 (\cf8 a\cf6 ), b: \cf5 \\\cf6 (\cf8 b\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 (\cf4 _\cf5 , \cf8 c\cf5 ) = \cf11 swipe\cf5 (number1: \cf9 10\cf5 , b: \cf9 20\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "c : \cf5 \\\cf6 (\cf8 c\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //inout concept
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  swipe(aa: \cf4 inout\cf5  \cf7 Double\cf5 , bb: \cf4 inout\cf5  \cf7 Double\cf5 )->(\cf7 Double\cf5 ,\cf7 Double\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 let\cf5  temp = aa
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     aa = bb
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     bb = temp
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  k = \cf9 8.0\cf5 , l = \cf9 9.0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf11 swipe\cf5 (aa:&\cf8 k\cf5  , bb:&\cf8 l\cf5  )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf10 print\cf5 (\cf6 "k : \cf5 \\\cf6 (\cf8 k\cf6 ), y: \cf5 \\\cf6 (\cf8 l\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //default parameter
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //func simpleInterest( amount:Double, noOfYears: Double, rate:Double = 5.0)->
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //Double
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //variadic parameters
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  display(n:\cf7 Int\cf5 ...)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 for\cf5  i \cf4 in\cf5  n
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 print\cf5  (i)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf11 display\cf5 (n: \cf9 1\cf5 ,\cf9 2\cf5 ,\cf9 3\cf5 ,\cf9 4\cf5 ,\cf9 5\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf11 display\cf5 (n: \cf9 10\cf5 ,\cf9 20\cf5 ,\cf9 30\cf5 )
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf2 //passing array as parameter
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  display(numberValues:\cf7 Int\cf5 , parameters:[\cf7 Int\cf5 ]...)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf10 print\cf5 (\cf6 "Number of values \cf5 \\\cf6 (\cf5 numberValues\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 for\cf5  i \cf4 in\cf5  parameters \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf10 print\cf5 (\cf6 "i: \cf5 \\\cf6 (\cf5 i\cf6 )"\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  arr = [\cf9 1\cf5 ,\cf9 2\cf5 ,\cf9 3\cf5 ,\cf9 4\cf5 ,\cf9 5\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf11 display\cf5 (numberValues:\cf9 3\cf5 , parameters:\cf8 arr\cf5 ,\cf8 arr\cf5 ,\cf8 arr\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 func\cf5  display(arrayList:[\cf7 Int\cf5 ]...) -> [\cf7 Int\cf5 ]
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  array1 = arrayList[\cf9 0\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  array2 = arrayList[\cf9 1\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 var\cf5  result = [\cf7 Int\cf5 ]()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf4 if\cf5  array1.count == \ulth a\ulnone rray2.Count
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 for\cf5  i \cf4 in\cf5  \cf9 0\cf5 ..<\ulth a\ulnone rray1.Count
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     result.append(array1[i] + array2[i]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \ulth \}
+\f1\fs24 \cf0 \ulnone \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf5     \cf4 return\cf5  result
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+\
+\
+\
+\
+\
+\
+}
