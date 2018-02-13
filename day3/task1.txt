@@ -1,0 +1,11 @@
+                                                               
+                                                            TASK 1
+
+  DIFFERENCE BETWEEN TUPLE AND DICTIONARY?
+
+1 Dictinory can contain only one datatype value at a time.
+  Tuple contains different values with different datatypes.
+2 Dictinory needs key value pairs.
+  Tuple won't need any key value pairs as it is a group of values represented as one value.
+3 Tuple contains only predefined number of values.
+  In dictionary there no limitations for values. 
